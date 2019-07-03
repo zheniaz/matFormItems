@@ -1,0 +1,19 @@
+<mat-form-field class="mat-form-input">
+    <input  matInput 
+            [placeholder]="placeholder"
+            [(ngModel)]="value"            
+            (ngModelChange)="onChange($event)"
+            [required]="required"
+            [matTooltip]="toolTip"
+            matTooltipClass="mat-tooltip-class"
+            [disabled]="disabled"
+    >
+    <button mat-button 
+            *ngIf="value" 
+            matSuffix 
+            mat-icon-button 
+            aria-label="Clear" 
+            (click)="value=''">
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-form-field>

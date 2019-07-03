@@ -1,0 +1,13 @@
+<mat-form-field>
+    <mat-label>{{label}}</mat-label>
+    <mat-select (selectionChange)="onChangeHandler($event)" 
+                [required]="required" 
+                [(value)]="SelectedValue"
+                [matTooltip]="toolTip"
+                matTooltipClass="mat-tooltip-class"
+                [disabled]="disabled">
+        <mat-option *ngFor="let item of InputArray" [value]="item.value">
+            {{item.value}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>

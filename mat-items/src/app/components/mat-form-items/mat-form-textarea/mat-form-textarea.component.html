@@ -1,0 +1,15 @@
+<mat-form-field class="example-full-width">
+    <textarea   matInput 
+                [placeholder]="placeholder"
+                (input)="feedbackSummary=$event.target.value" 
+                [(ngModel)]="value"
+                (ngModelChange)="ngOnChange($event)"
+                [matTooltip]="toolTip"
+                matTooltipClass="mat-tooltip-class"
+                [disabled]="disabled"
+                [required]="required"
+                matTooltipPosition="below">
+    </textarea>
+</mat-form-field>
+
+<!-- check line 4 (input)="feedbackSummary=$event.target.value"  -->
