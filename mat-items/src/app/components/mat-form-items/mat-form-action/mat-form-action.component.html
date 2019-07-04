@@ -1,0 +1,58 @@
+<div fxLayout="row" fxLayoutAlign="end center">
+    <div fxLayoutAlign="end center">
+        <div class="mat-button-margin">
+            <button mat-button 
+                (click)="onConfirm()" 
+                [disabled]="IsDisabledConfirmButton"
+                type="button"
+                [matTooltip]="ConfirmToolTip"
+                *ngIf="IsConfirmButton">{{ConfirmButtonText}}
+            </button>
+        </div>
+        <div class="mat-button-margin">
+            <button mat-button 
+                (click)="onAction()"
+                type="button"
+                [disabled]="IsDisabledActionButton"
+                [matTooltip]="CloseToolTip"
+                *ngIf="IsActionButton">{{ActionButtonText}}
+            </button>
+        </div>
+        <div class="mat-button-margin">
+            <button mat-button 
+                (click)="onYesAction()"
+                type="button"
+                [disabled]="IsDisabledYesButton"
+                [matTooltip]="YesToolTip"
+                *ngIf="IsYesButton">{{YesButtonText}}
+            </button>
+        </div>
+        <div class="mat-button-margin">
+            <button mat-button 
+                (click)="onNoAction()"
+                type="button"
+                [disabled]="IsDisabledNoButton"
+                [matTooltip]="NoToolTip"
+                *ngIf="IsNoButton">{{NoButtonText}}
+            </button>
+        </div>
+        <div class="mat-button-margin">
+            <button mat-button 
+                (click)="onSubmit()"
+                type="submit"
+                [disabled]="IsDisabledSubmitButton"
+                [matTooltip]="ActionToolTip"
+                *ngIf="IsSubmitButton">{{SubmitButtonText}}
+            </button>
+        </div>
+        <div class="mat-button-margin">
+            <button mat-button
+                (click)="onClose()"
+                type="button" 
+                [disabled]="IsDisabledCloseButton"
+                [matTooltip]="SubmitToolTip"
+                *ngIf="IsCloseButton">{{CloseButtonText}}
+            </button>
+        </div>
+    </div>
+</div>

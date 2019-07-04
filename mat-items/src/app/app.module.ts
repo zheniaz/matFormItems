@@ -19,6 +19,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatFormTextareaComponent } from './components/mat-form-items/mat-form-textarea/mat-form-textarea.component';
 import { MatFormDropdownComponent } from './components/mat-form-items/mat-form-dropdown/mat-form-dropdown.component';
 import { MatFormDatapickerComponent } from './components/mat-form-items/mat-form-datapicker/mat-form-datapicker.component';
+import { MatFormActionComponent } from './components/mat-form-items/mat-form-action/mat-form-action.component';
 
 @NgModule({
     declarations: [
@@ -28,6 +29,7 @@ import { MatFormDatapickerComponent } from './components/mat-form-items/mat-form
         MatFormTextareaComponent,
         MatFormDropdownComponent,
         MatFormDatapickerComponent,
+        MatFormActionComponent,
     ],
     imports: [
         BrowserModule,
