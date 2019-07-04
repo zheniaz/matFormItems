@@ -43,6 +43,8 @@
     </div>
     <div>
         <mat-form-action    IsActionButton="true"
+                            ActionButtonText="Confirm Button"
+                            (MatFormAction)="openConfiramtionDialog(isConfirm)"
                             IsConfirmButton="true"
                             IsSubmitButton="true"
                             IsCloseButton="true"

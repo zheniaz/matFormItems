@@ -20,6 +20,7 @@ import { MatFormTextareaComponent } from './components/mat-form-items/mat-form-t
 import { MatFormDropdownComponent } from './components/mat-form-items/mat-form-dropdown/mat-form-dropdown.component';
 import { MatFormDatapickerComponent } from './components/mat-form-items/mat-form-datapicker/mat-form-datapicker.component';
 import { MatFormActionComponent } from './components/mat-form-items/mat-form-action/mat-form-action.component';
+import { ConfirmationDialogComponent } from './components/mat-form-items/confirmation-dialog/confirmation-dialog.component';
 
 @NgModule({
     declarations: [
@@ -30,6 +31,7 @@ import { MatFormActionComponent } from './components/mat-form-items/mat-form-act
         MatFormDropdownComponent,
         MatFormDatapickerComponent,
         MatFormActionComponent,
+        ConfirmationDialogComponent,
     ],
     imports: [
         BrowserModule,
@@ -74,6 +76,9 @@ import { MatFormActionComponent } from './components/mat-form-items/mat-form-act
         FlexLayoutModule,
         ReactiveFormsModule,
         
+    ],
+    entryComponents: [
+        ConfirmationDialogComponent
     ],
     providers: [],
     bootstrap: [AppComponent]

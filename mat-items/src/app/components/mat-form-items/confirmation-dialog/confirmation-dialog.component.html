@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Hi there!</h1>
+
+<div mat-dialog-content 
+    fxLayout="row" 
+    fxLayoutAlign="center" 
+    style="padding: 20px; margin: 20px;">
+    <div> 
+        {{data.message}}
+    </div>
+</div>
+<div mat-dialog-actions fxLayout="row" fxLayoutAlign="end end" >
+    <mat-form-action
+        IsYesButton="true"
+        (YesAction)="onClick(true)"
+        IsNoButton="true"
+        (NoAction)="onClick(false)">
+    </mat-form-action>
+</div>
