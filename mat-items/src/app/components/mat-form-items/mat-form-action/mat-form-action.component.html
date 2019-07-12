@@ -1,6 +1,6 @@
 <div fxLayout="row" fxLayoutAlign="end center">
     <div fxLayoutAlign="end center">
-        <div class="mat-button-margin">
+        <div class="mat-button-item">
             <button mat-button 
                 (click)="onConfirm()" 
                 [disabled]="IsDisabledConfirmButton"
@@ -9,7 +9,7 @@
                 *ngIf="IsConfirmButton">{{ConfirmButtonText}}
             </button>
         </div>
-        <div class="mat-button-margin">
+        <div class="mat-button-item">
             <button mat-button 
                 (click)="onAction()"
                 type="button"
@@ -18,7 +18,7 @@
                 *ngIf="IsActionButton">{{ActionButtonText}}
             </button>
         </div>
-        <div class="mat-button-margin">
+        <div class="mat-button-item">
             <button mat-button 
                 (click)="onYesAction()"
                 type="button"
@@ -27,7 +27,7 @@
                 *ngIf="IsYesButton">{{YesButtonText}}
             </button>
         </div>
-        <div class="mat-button-margin">
+        <div class="mat-button-item">
             <button mat-button 
                 (click)="onNoAction()"
                 type="button"
@@ -36,7 +36,7 @@
                 *ngIf="IsNoButton">{{NoButtonText}}
             </button>
         </div>
-        <div class="mat-button-margin">
+        <div class="mat-button-item">
             <button mat-button 
                 (click)="onSubmit()"
                 type="submit"
@@ -45,7 +45,7 @@
                 *ngIf="IsSubmitButton">{{SubmitButtonText}}
             </button>
         </div>
-        <div class="mat-button-margin">
+        <div class="mat-button-item">
             <button mat-button
                 (click)="onClose()"
                 type="button" 

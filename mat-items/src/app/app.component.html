@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,35 +16,35 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
 
 
 <mat-card>
     <div fxLayout="row">
-        <div fxFlex="20%" style="margin: 10px">
+        <div fxFlex="20%" class="demo-items-class" style="margin: 10px">
             <mat-form-input [toolTip]="toolTip" [value]="value" [placeholder]="placeholder"></mat-form-input>
         </div>
 
-        <div fxFlex="20%" style="margin: 10px">
+        <div fxFlex="20%" class="demo-items-class">
             <mat-form-textarea [toolTip]="toolTip" [value]="value" [placeholder]="placeholder"></mat-form-textarea>
         </div>
 
-        <div fxFlex="20%" style="margin: 10px">
+        <div fxFlex="20%" class="demo-items-class">
             <mat-form-dropdown [toolTip]="toolTip" [InputArray]="dropdownArray" [label]="placeholder"></mat-form-dropdown>
         </div>
 
-        <div fxFlex="20%" style="margin: 10px">
+        <div fxFlex="20%" class="demo-items-class">
             <mat-form-datapicker [toolTip]="toolTip" [value]="dateValue" [placeholder]="placeholder"></mat-form-datapicker>
         </div>
 
-        <div fxFlex="20%" style="margin: 10px">
+        <div fxFlex="20%" class="demo-items-class">
             <mat-form-input [toolTip]="toolTip" [value]="value" [placeholder]="placeholder"></mat-form-input>
         </div>
     </div>
     <div>
         <mat-form-action    IsActionButton="true"
                             ActionButtonText="Confirm Button"
-                            (MatFormAction)="openConfiramtionDialog(isConfirm)"
+                            (MatFormAction)="openConfiramtionDialog(i)"
                             IsConfirmButton="true"
                             IsSubmitButton="true"
                             IsCloseButton="true"
